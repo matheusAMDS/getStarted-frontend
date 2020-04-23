@@ -23,10 +23,10 @@ export default function CompanyProfile() {
   }, [id])
 
   return (
-    <main className="container mx-auto max-w-3xl my-12">
+    <main className="container mx-auto max-w-3xl my-6 p-3">
       { company &&
         <>
-          <div className="w-full bg-white p-4 my-6 rounded shadow-xl">
+          <div className="w-full bg-white mb-6 p-4 rounded shadow-xl">
             <p className="font-semibold text-3xl text-center mb-4">{company.name}</p>
             <p>Endereço: {company.address}, {company.city} - {company.uf}</p>
             

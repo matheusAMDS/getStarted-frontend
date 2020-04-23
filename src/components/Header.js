@@ -21,7 +21,8 @@ export default function Header() {
         <span className="text-green-500">getStarted</span>
         <span className="text-white font-semibold">()</span>
       </Link>
-      <nav className="flex justify-center items-center w-full max-w-lg md:justify-end md:flex-row ">
+      
+      <nav className="flex justify-center items-center w-full max-w-lg md:justify-end md:flex-row">
         <DropdownButton
           disabled={isLoggedIn()}
           text="Login"

@@ -17,7 +17,7 @@ export default function ProgrammerProfile() {
   }, [id])
 
   return (
-    <main className="container mx-auto bg-white max-w-3xl my-12 rounded shadow-xl p-6">
+    <main className="container w-full mx-auto max-w-3xl my-12 p-4 bg-white rounded shadow-xl">
       { programmer && (
         <>
           <p className="font-semibold text-3xl text-center mb-4">{programmer.name}</p>

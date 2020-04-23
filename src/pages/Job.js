@@ -51,7 +51,7 @@ export default function Job() {
   }, [id])
 
   return (
-    <main className="container mx-auto my-12 max-w-3xl">
+    <main className="container w-full mx-auto max-w-3xl my-6 p-3">
       { job && (
         <JobCard job={job}>
           <hr className="mt-6 mb-2"/>
@@ -63,7 +63,7 @@ export default function Job() {
           <h2 className="text-xl font-semibold mt-4">Interessados na vaga</h2>
           <div className="w-full my-4 mx-auto">
             {job.interested.map(dev => (
-              <div className="w-full">
+              <div className="w-full" key={dev._id}>
                 <hr className="mb-3"/>
                 <Link 
                   to={`/programmer/profile/${dev._id}`} 

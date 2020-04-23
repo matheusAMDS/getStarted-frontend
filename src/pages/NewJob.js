@@ -40,7 +40,7 @@ export default function NewJob() {
   }
 
   return (
-    <main className="container mx-auto max-w-2xl my-6">
+    <main className="container w-full mx-auto max-w-3xl my-6 p-3">
       <h1 className="font-semibold text-2xl text-center mb-4">Abrir vaga</h1>
 
       <form className="w-full" onSubmit={handleSubmit}>
